@@ -17,6 +17,8 @@
 4. pip install (library) - install python library
 5. pip freeze -> requirements.txt - creates new requirements file
 6. pytest --pylint --cov - run pylint and coverage
+7. source my_env/bin/activate - open venv
+8. deactivate - exit venv
 
 pylint - tests for style (linter)
 coverage - checks the amt of tested code

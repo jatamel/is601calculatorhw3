@@ -15,4 +15,8 @@
 3. code . - open  vscode from CL
 4. mv - rename file
 4. pip install (library) - install python library
-5. pip freeze -> requirements.txt
+5. pip freeze -> requirements.txt - creates new requirements file
+6. pytest --pylint --cov - run pylint and coverage
+
+pylint - tests for style (linter)
+coverage - checks the amt of tested code

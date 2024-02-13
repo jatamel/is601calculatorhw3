@@ -14,4 +14,4 @@ def multiply(a,b):
 
 def divide(a,b):
     "divide two varibles"
-    return b / a
+    return a / b

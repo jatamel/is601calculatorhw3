@@ -1,17 +1,25 @@
 '''this is a calculator'''
+from calculator.operations import add, subtract, multiply, divide
+from calculator.calculation import Calculation
 
-def add(a,b):
-    '''so i need a docstring here too ig..'''
-    return a + b
+class Calculator:
+    @staticmethod
+    def add(a,b):
+         calculation = Calculation(a,b,add)
+         return calculation.get_result()
+    
+    @staticmethod
+    def subtract(a,b):
+        calculation = Calculation(a,b,subtract)
+        return calculation.get_result()
 
-def subtract(a,b):
-    '''so this is how we subtract..'''
-    return a - b
+    @staticmethod
+    def multiply(a,b):
+        calculation = Calculation(a,b,multiply)
+        return calculation.get_result()
 
-def multiply(a,b):
-    "multiply two varibles"
-    return a * b
-
-def divide(a,b):
-    "divide two varibles"
-    return a / b
+    @staticmethod
+    def divide(a,b):
+        calculation = Calculation(a,b,divide)
+        return calculation.get_result()
+    

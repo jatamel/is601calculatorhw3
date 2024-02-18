@@ -1,17 +1,16 @@
 '''this is a calculator'''
-
-def add(a,b):
-    '''so i need a docstring here too ig..'''
+from decimal import Decimal
+# Define the functions with type hints
+def add(a: Decimal, b: Decimal) -> Decimal:
     return a + b
 
-def subtract(a,b):
-    '''so this is how we subtract..'''
+def subtract(a: Decimal, b: Decimal) -> Decimal:
     return a - b
 
-def multiply(a,b):
-    "multiply two varibles"
+def multiply(a: Decimal, b: Decimal) -> Decimal:
     return a * b
 
-def divide(a,b):
-    "divide two varibles"
+def divide(a: Decimal, b: Decimal) -> Decimal:
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b

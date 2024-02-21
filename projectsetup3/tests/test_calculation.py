@@ -15,9 +15,9 @@ as well as the functionality of the Calculation class that encapsulates these op
 # Import the arithmetic operation functions (add, subtract, multiply, divide) to be tested.
 # pylint: disable=unnecessary-dunder-call, invalid-name
 from decimal import Decimal
-import pytest
 from calculator.calculation import Calculation
 from calculator.operations import add, subtract, multiply, divide
+import pytest
 
 # pytest.mark.parametrize decorator is used to parameterize a test function, enabling it to be called
 # with different sets of arguments. Here, it's used to test various scenarios of arithmetic operations
